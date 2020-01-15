@@ -1,9 +1,11 @@
-extends Node
+extends Node2D
+
+class_name character
 
 var total_health = 0;
 var attack_val;
 var nickname = "";
-var position;
+var location;
 var moves = [];
 var level = 1;
 
