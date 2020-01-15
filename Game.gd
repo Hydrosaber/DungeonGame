@@ -11,12 +11,14 @@ var current_level
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	get_child(0).get_child(0).get_child(0).play("Idle")
-	#new_level()
+	player = main_character.instance()
+	add_child(player)
+	new_level()
 	print("hello")
 	
 func new_level():
 	current_level = level.instance()
+	add_child(current_level);
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

@@ -27,6 +27,7 @@ centered = false
 vframes = 2
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite"]
+autoplay = "Idle"
 anims/Idle = SubResource( 1 )
 
 [node name="Camera2D" type="Camera2D" parent="Sprite"]
