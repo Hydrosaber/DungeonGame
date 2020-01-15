@@ -1,13 +1,34 @@
 extends Node
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+var total_health = 0;
+var attack_val;
+var nickname = "";
+var position;
+var moves = [];
+var level = 1;
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
+func gen_HP():
+	return 0;
+	
+func get_location():
+	return 0;
+	
+func set_location():
+	return 0;
+	
+func move(position):
+	return true;
+	
+func update_visuals():
+	return 0;
+	
+func attack(position):
+	return 0;
+	
+func hurt(var amount):
+	return 0;
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+
+
+
+
