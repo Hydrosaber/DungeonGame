@@ -148,6 +148,7 @@ func find_start_room():
 		if room.position.x < min_x:
 			start_room = room
 			min_x = room.position.x
+	return start_room
 
 func find_end_room():
 	var max_x = -INF
@@ -155,3 +156,4 @@ func find_end_room():
 		if room.position.x > max_x:
 			end_room = room
 			max_x = room.position.x
+	return end_room

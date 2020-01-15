@@ -9,5 +9,3 @@ func _input(event):
 
 func level_up():
 	level = level+1
-	
-	
