@@ -1,9 +1,10 @@
 extends Node2D
-enum { EMPTY = -1, ACTOR, OBSTACLE, OBJECT}
 
 class_name character
 
 onready var Map = $TileMap
+onready var GameMaster = get_owner()
+onready var health_bar = $HealthBar
 
 var total_health = 0;
 var attack_val;
@@ -28,19 +29,6 @@ func set_hp(value):
 	if total_health == 0:
 		kill();
 
-func move(actor, direction):
-	var cell_start = actor.get_position
-	var cell_target = cell_start + direction
-	var cell_target_type = Map.get_cell(cell_target)
-	match cell_target_type:
-		EMPTY:
-			return update_visuals(actor, cell_start, cell_target)
-		OBJECT:
-			var object_pawn = Map.get_cell_pawn(cell_target)
-			#Have character add to its list of items
-			return Map.update_pawn_position(actor, cell_start, cell_target)
-		ACTOR:
-			pass;
 
 func update_visuals(actor, cell_start, cell_target):
 	Map.set_cell(cell_target, actor.type)
