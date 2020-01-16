@@ -121,7 +121,10 @@ func make_map():
 													path.get_point_position(conn).y))									
 				carve_path(start, end)
 		corridors.append(p)
-				
+
+func get_tile( var location):
+	return Map.get_cell(location.x, location.y)
+
 func carve_path(pos1, pos2):
 	var blankTile = -1
 	# Carve a path between two points

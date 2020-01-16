@@ -14,7 +14,7 @@ var current_level
 func _ready():
 	player = main_character.instance()
 	add_child(player)
-	new_level()
+	yield(new_level(), "completed")
 	print("hello")
 	
 func new_level():
