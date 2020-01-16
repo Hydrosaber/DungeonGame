@@ -5,7 +5,7 @@ class_name character
 var total_health = 0;
 var attack_val;
 var nickname = "";
-var location;
+var coordinates;
 var moves = [];
 var level = 1;
 
@@ -13,13 +13,12 @@ func gen_HP():
 	return 0;
 	
 func get_location():
-	return 0;
+	return coordinates;
 	
 func set_location():
-	return 0;
 	
 func move(position):
-	return true;
+	return 0;
 	
 func update_visuals():
 	return 0;
