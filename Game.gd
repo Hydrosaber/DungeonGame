@@ -4,6 +4,7 @@ extends Node2D
 # var a = 2
 # var b = "text"
 var level = preload("res://Level.tscn")
+var character = preload("res://Level.gd")
 var main_character = preload("res://Main_Character.tscn")
 var camera
 var player

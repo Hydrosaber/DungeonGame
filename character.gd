@@ -3,7 +3,7 @@ extends Node2D
 var total_health = 0;
 var attack_val;
 var nickname = "";
-var location;
+var coordinates;
 var moves = [];
 var level = 1;
 
@@ -13,8 +13,10 @@ func gen_HP():
 func get_location():
 	return 0;
 
-func set_location():
-	return 0;
+#precondition needs to be Vector2
+func set_location(var loc):
+        coordinates = loc;
+        position = coordinates * 32;
 
 func move(position):
 	return true;
