@@ -20,6 +20,7 @@ func new_level():
 	current_level = level.instance()
 	add_child(current_level);
 
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
