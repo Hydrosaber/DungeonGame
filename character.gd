@@ -6,6 +6,7 @@ var nickname = "";
 var coordinates;
 var moves = [];
 var level = 1;
+var Room = preload("res://Room.tscn");
 
 func gen_HP():
 	return 0;
