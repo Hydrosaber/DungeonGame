@@ -39,6 +39,8 @@ func move(actor, direction):
 			var object_pawn = Map.get_cell_pawn(cell_target)
 			#Have character add to its list of items
 			return Map.update_pawn_position(actor, cell_start, cell_target)
+		ACTOR:
+			pass;
 
 func update_visuals(actor, cell_start, cell_target):
 	Map.set_cell(cell_target, actor.type)
@@ -47,6 +49,10 @@ func update_visuals(actor, cell_start, cell_target):
 
 func attack(position, damage):
 	match position:
+		EMPTY:
+			pass
+		OBJECT:
+			pass
 		ACTOR:
 			Map.get_cell_pawn(position).hurt(damage);
 
