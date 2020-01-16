@@ -16,7 +16,6 @@ margin_right = 28.0
 margin_bottom = 4.0
 rect_scale = Vector2( 0.25, 0.25 )
 max_value = 96.0
-value = 2.0
 texture_under = ExtResource( 2 )
 texture_progress = ExtResource( 2 )
 tint_under = Color( 0, 0, 0, 0.498039 )
